@@ -1,0 +1,56 @@
+.blog-carousel {
+  .post {
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+
+    &__inner {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: rgba(36, 36, 46, 0.9);
+      width: 65%;
+      color: #fff;
+      padding: 32px;
+    }
+
+    &__tag {
+      text-transform: uppercase;
+      color: $color-primary;
+    }
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    &__title a {
+      color: #fff;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 600;
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__date {
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+  }
+
+  .slick-slide {
+    // max-width: 50%;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid $color-primary;
+  border-radius: 50px;
+}

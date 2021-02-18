@@ -1,0 +1,75 @@
+.hero-media {
+  position: relative;
+  height: 545px;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    display: flex;
+
+    &-solid {
+      flex: 302px 0 0;
+      background: $bg-dark;
+
+      &.fluid {
+        flex: 21.5% 1 1;
+      }
+    }
+
+    &-img {
+      flex: 1;
+
+      &.fluid {
+        flex: 78.5% 1 0;
+      }
+
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    @include container;
+    color: #fff;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 80px);
+  }
+
+  &__title {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  &__description {
+    display: flex;
+  }
+
+  .icon {
+    flex: 50px 0 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid $color-primary;
+    margin-right: 37px
+  }
+
+  &__title,
+  &__description {
+    max-width: 480px;
+  }
+}

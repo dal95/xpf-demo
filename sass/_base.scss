@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+body {
+  font-family: $font-sans;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-text;
+}
+
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-sans;
+}
+
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: cursive;
+}
+
+// Inline
+
+a {
+  color: $color-primary;
+  cursor: pointer;
+  text-decoration: none;
+
+  strong {
+    color: currentColor;
+  }
+
+  &:hover {
+    color: $color-primary
+  }
+}
+
+code {
+  background-color: #ddd;
+  color: $color-text;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 5px;
+}
+
+hr {
+  background-color: transparent;
+  border: none;
+  display: block;
+  height: 1px;
+  margin: 10px 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: baseline;
+}
+
+small {
+  font-size: $font-size-small;
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+strong {
+  color: $color-text;
+  font-weight: bold;
+}
+
+// Block
+
+fieldset {
+  border: none;
+}
+
+pre {
+  @include overflow-touch;
+
+  background-color: #eee;
+  color: $color-text;
+  font-size: $font-size-medium;
+  overflow-x: auto;
+  padding: 5px;
+  white-space: pre;
+  word-wrap: normal;
+
+  code {
+    background-color: transparent;
+    color: currentColor;
+    font-size: $font-size-medium;
+    padding: 0;
+  }
+}
+
+table {
+  td,
+  th {
+    vertical-align: top;
+
+    &:not([align]) {
+      text-align: inherit;
+    }
+  }
+
+  th {
+    color: $color-text
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-poppin;
+  font-weight: bold;
+}
+
+.section-heading {
+  font-size: 36px;
+}
+
+.view-all {
+  font-size: 16px;
+  font-family: $font-poppin;
+  font-weight: 600;
+  text-decoration: underline;
+  color: $color-text;
+  text-decoration-color: $color-primary;
+}

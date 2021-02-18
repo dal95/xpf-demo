@@ -1,0 +1,59 @@
+.finder {
+  position: relative;
+  margin-top: -80px;
+  z-index: 3;
+
+  &__tabs {
+    @include row
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 50px;
+    font-size: 21px;
+    color: #fff;
+    background-color: rgba(#1B1B23, .7);
+    cursor: pointer;
+
+    &.active {
+      background: $color-primary
+    }
+  }
+
+  &__form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bg-dark;
+    height: 160px;
+  }
+
+  &__form-input {
+    @extend .input;
+    width: 348px;
+    margin: 0 10px;
+  }
+
+  &__form-submit {
+    @extend .input;
+    border: 1px solid #fff !important;
+    color: #fff;
+    width: 200px;
+    background: $bg-soft-dark;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+}
+
+.blog-carousel {
+  margin-top: 60px;
+}
+
+// Form => extract this later
+.input {
+  border: 0;
+  height: 50px;
+  padding: 0 20px;
+}
